@@ -1,0 +1,25 @@
+{
+    "name": "psistemarh",
+    "version": "1.0.0",
+    "description": "API PARA SistemaRH",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "api",
+        "rest",
+        "express",
+        "nodejs"
+    ],
+    "author": "Eduardo R",
+    "license": "ISC",
+    "dependencies": {
+        "demon": "^0.0.1",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.2",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1"
+    }
+}

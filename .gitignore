@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# npm
+npm-debug.log
+npm-debug.log.*
+.pnp.*
+*.pnp.cjs
+.pnp.js
+.pnp.mjs
+
+# Yarn
+yarn-error.log
+yarn.lock
+
+# Optional eslint cache
+.eslintcache
+
+# Optional local npm cache
+.npm
+
+# Optional pnpm store
+pnpm-store/

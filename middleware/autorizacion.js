@@ -1,13 +1,14 @@
-const jwt = require('jsonwebtoken');
+const jwt= require("jsonwebtoken");
 
-module.exports = (req, res, next) => {
+module.exports=((req,res,next)=>{
     try{
         const token = req.headers.authorization.split(" ")[1];
-        const decoded = jwt.verify(token, "debugkey");
-        req.user = decoded;
+        const decoded= jwt.verify(token,"debugkey");
+        console.log(decoded);   
+        req.user=decoded;
         next();
+    }catch(error){
+        res.status(401);
+        res.json({code: 401,message: "No tienes permiso"});
     }
-    catch(error){
-        return res.status(401).json({code: 401, message: "No cuentas con permiso"});
-    }
-}
+});

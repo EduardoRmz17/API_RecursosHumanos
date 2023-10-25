@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Administración de empleados</title>
+ <link rel="stylesheet" type="text/css" href="style-admin.css">
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <script src="./js/admin.js"></script>
+</head>
+<body>
+ <div class="container">
+    <h1>Administración de empleados</h1>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Buscar empleado">
+      <button id="search-button">Buscar</button>
+    </div>
+    <div class="results">
+      <ul id="results-list"></ul>
+    </div>
+    <div class="options">
+      <ul>
+        <li><a href="../frontEnd/listUsers.html">Listar empleados</a></li>
+        <li><a href="../frontEnd/add.html">Agregar empleado</a></li>
+        <li><a href="../frontEnd/edit.html">Editar empleado</a></li>
+        <li><a href="../frontEnd/delete.html">Eliminar empleado</a></li>
+      </ul>
+    </div>
+    <a href="/">Volver</a>
+ </div>
+</body>
+</html>

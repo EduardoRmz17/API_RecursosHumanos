@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Información de empleado</title>
+   <link rel="stylesheet" type="text/css" href="style-user.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/user.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Información de empleado</h1>
+    </div>
+    <div class="main">
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <td id="td_name">{{ empleado.nombre }}</td>
+        </tr>
+        <tr>
+          <th>Apellidos</th>
+          <td id="td_Lname">{{ empleado.apellidos }}</td>
+        </tr>
+        <tr>
+          <th>Teléfono</th>
+          <td id="td_cel">{{ empleado.telefono }}</td>
+        </tr>
+        <tr>
+          <th>Correo electrónico</th>
+          <td id="td_mail">{{ empleado.correo_electronico }}</td>
+        </tr>
+        <tr>
+          <th>Dirección</th>
+          <td id="td_address">{{ empleado.direccion }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">
+      <button id="backButton">Volver al Panel</button>
+    </div>
+  </div>
+</body>
+</html>
